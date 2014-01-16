@@ -77,3 +77,60 @@ body {
     border-bottom: 0;
   }
 }
+
+@font-face {
+  font-family: 'Riesling';
+  src: url('../fonts/riesling.ttf');
+}
+
+@font-face {
+  font-family: 'Champagne';
+  src: url('../fonts/Champagne & Limousines.ttf');
+}
+
+@font-face {
+  font-family: 'Caviar';
+  src: url('../fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: 'Florence';
+  src: url('../fonts/Florence-Regular.ttf');
+}
+
+body {
+  padding-top: 50px;
+  background-image: url('/images/bg.png');
+  background-repeat: repeat-x;
+  background-color: white;
+}
+
+.navbar.navbar-fixed-top {
+  background: #ddd;
+}
+
+.row {
+  background-color: white;
+}
+
+.first-row {
+  background: transparent;
+}
+
+.row section {
+  background-color: white;
+}
+
+.row section h1 {
+  font-family: Florence;
+  font-size: 5em;
+}
+
+#home section {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#contact {
+  margin-top: -10px;
+}
