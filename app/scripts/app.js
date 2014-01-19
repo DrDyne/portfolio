@@ -4,15 +4,7 @@ angular.module('portfolioApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  //'ngRoute'
 ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+.config(function () {
+});
