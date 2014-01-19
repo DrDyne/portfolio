@@ -9,7 +9,7 @@ angular.module('portfolioApp')
     element.sudoSlider({
       responsive: true,
       speed: 400,
-      customLink: '.' + attrs.jqSliderCustomlink,
+      customLink: '.slider-nav-' + attrs.jqSliderCustomlink + ' .jq-slider-link',
       controlsFade: true,
       prevNext: false,
     });
