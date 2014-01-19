@@ -79,7 +79,7 @@
           <div id="me" class="section">
             <div class="section-logo"><span class="logo-me">some logo</span></div>
             <h1 class="section-header">Me</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="me">
               <ul>
                 <li>
                   <section>
@@ -90,6 +90,7 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-me" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -97,7 +98,7 @@
           <div id="contact" class="section">
             <div class="section-logo"><span class="logo-contact">some logo</span></div>
             <h1 class="section-header">Contact</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="contact">
               <ul>
                 <li>
                   <section>
@@ -117,6 +118,7 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-contact" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -124,7 +126,7 @@
           <div id="employments" class="section">
             <div class="section-logo"><span class="logo-employments">some logo</span></div>
             <h1 class="section-header">Employments</h1>
-            <div jq-slider jq-slider-customlink="jq-slider-link-employments">
+            <div jq-slider jq-slider-customlink="employments">
               <ul>
                 <li>
                   <section>
@@ -179,7 +181,7 @@
                 </li>
               </ul>
             </div>
-            <div class="slider-nav" ng-include="'views/jq-slider-nav.html'"></div>
+            <div class="slider-nav slider-nav-employments" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -187,10 +189,30 @@
           <div id="demos" class="section">
             <div class="section-logo"><span class="logo-demos">some logo</span></div>
             <h1 class="section-header">Demos</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="demos">
               <ul>
                 <li>
                     Various demos
+                </li>
+                <li>
+                  <section>
+                    <h1>Angular</h1>
+                  </section>
+                </li>
+                <li>
+                  <section>
+                    <h1>Backbone</h1>
+                  </section>
+                </li>
+                <li>
+                  <section>
+                    <h1>jQuery</h1>
+                  </section>
+                </li>
+                <li>
+                  <section>
+                    <h1>TDD</h1>
+                  </section>
                 </li>
                 <li>
                   <section>
@@ -201,8 +223,28 @@
                     -->
                   </section>
                 </li>
+                <li>
+                  <section>
+                    <h1>Tumblr</h1>
+                    <!--
+                    <script type="text/javascript" src="http://dr-dyne.tumblr.com/api/read/json?num=3"></script>
+                    <script type="text/javascript" src="http://dr-dyne.tumblr.com/api/read/json?type=photo&id=65331363904"></script>
+                    -->
+                  </section>
+                </li>
+                <li>
+                  <section>
+                    <h1>Github</h1>
+                    <!--
+                    <script type="text/javascript">
+                      $.getJSON('https://api.github.com/users/DrDyne/events', function (json, success) { console.log(json.slice(0,5)) });
+                    </script>
+                    -->
+                  </section>
+                </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-demos" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -210,7 +252,7 @@
           <div id="tools" class="section">
             <div class="section-logo"><span class="logo-tools">some logo</span></div>
             <h1 class="section-header">Tools</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="tools">
               <ul>
                 <li>
                   Various Tools
@@ -223,6 +265,7 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-tools" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -230,7 +273,7 @@
           <div id="education" class="section">
             <div class="section-logo"><span class="logo-education">some logo</span></div>
             <h1 class="section-header">Education</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="education">
               <ul>
                 <li>
                   Education
@@ -255,6 +298,7 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-education" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -262,7 +306,7 @@
           <div id="skills" class="section">
             <div class="section-logo"><span class="logo-skills">some logo</span></div>
             <h1 class="section-header">Skills</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="skills">
               <ul>
                 <li>
                   Various Skills
@@ -275,6 +319,7 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-skills" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -282,13 +327,14 @@
           <div id="languages" class="section">
             <div class="section-logo"><span class="logo-languages">some logo</span></div>
             <h1 class="section-header">Languages</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="languages">
               <ul>
                 <li>
                   English, French
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-languages" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
@@ -296,7 +342,7 @@
           <div id="activities" class="section">
             <div class="section-logo"><span class="logo-activities">some logo</span></div>
             <h1 class="section-header">Activities</h1>
-            <div jq-slider>
+            <div jq-slider jq-slider-customlink="activities">
               <ul>
                 <li>
                   Microsoft UX workshop
@@ -315,22 +361,25 @@
                 </li>
               </ul>
             </div>
+            <div class="slider-nav slider-nav-activities" ng-include="'views/jq-slider-nav.html'"></div>
           </div>
         </div>
 
         <div id="you" class="row">
-          <section>
-            <h1>You</h1>
-          </section>
+          <div id="you" class="section">
+            <div class="section-logo"><span class="logo-you">some logo</span></div>
+            <h1 class="section-header">You</h1>
+            <div jq-slider jq-slider-customlink="you">
+              <ul>
+                <li>
+                  <p>
+                    So that's what is between You and Me.
+                  </p>
+                </li>
+              </ul>
+          </div>
         </div>
 
-        <!--
-        <script type="text/javascript">
-          $.getJSON('https://api.github.com/users/DrDyne/events', function (json, success) { console.log(json.slice(0,5)) });
-        </script>
-        <script type="text/javascript" src="http://dr-dyne.tumblr.com/api/read/json?num=3"></script>
-        <script type="text/javascript" src="http://dr-dyne.tumblr.com/api/read/json?type=photo&id=65331363904"></script>
-        -->
       </div> <!-- div #content -->
 
       <div class="footer">
