@@ -25,7 +25,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-controller="MainCtrl">
+    <div class="container" ng-controller="MainCtrl" scrollbar-annotate>
       <div class="navbar navbar-fixed-top">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,8 +34,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Remy Chaumard</a>
+          <a class="navbar-brand" scroll-to="contact" href="#">Remy Chaumard</a>
         </div>
+      <!--
         <div id="nav-top" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li>
@@ -53,7 +54,6 @@
             <li>
               <a href="#tools" scroll-to="tools">Tools</a>
             </li>
-            <!--
             <li>
               <a href="#education">Education</a>
             </li>
@@ -66,17 +66,17 @@
             <li>
               <a href="#activities">Activities</a>
             </li>
-            -->
             <li>
               <a href="#you" scroll-to="you">You</a>
             </li>
           </ul>
         </div>
+      -->
       </div>
 
       <div class="content">
         <div class="row row-first">
-          <div id="me" class="section">
+          <div id="me" class="section page">
             <div class="section-logo"><span class="logo-me">some logo</span></div>
             <h1 class="section-header">Me</h1>
             <div jq-slider jq-slider-customlink="me">
@@ -95,35 +95,7 @@
         </div>
 
         <div class="row">
-          <div id="contact" class="section">
-            <div class="section-logo"><span class="logo-contact">some logo</span></div>
-            <h1 class="section-header">Contact</h1>
-            <div jq-slider jq-slider-customlink="contact">
-              <ul>
-                <li>
-                  <section>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                    </p>
-                  </section>
-                </li>
-                <li>
-                  My github
-                </li>
-                <li>
-                  My blog
-                </li>
-                <li>
-                  My tumblr
-                </li>
-              </ul>
-            </div>
-            <div class="slider-nav jq-slider-link-contact" ng-include="'views/jq-slider-nav.html'"></div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div id="employments" class="section">
+          <div id="employments" class="section page">
             <div class="section-logo"><span class="logo-employments">some logo</span></div>
             <h1 class="section-header">Employments</h1>
             <div jq-slider jq-slider-customlink="employments">
@@ -186,13 +158,16 @@
         </div>
 
         <div class="row">
-          <div id="demos" class="section">
+          <div id="demos" class="section page">
             <div class="section-logo"><span class="logo-demos">some logo</span></div>
             <h1 class="section-header">Demos</h1>
             <div jq-slider jq-slider-customlink="demos">
               <ul>
                 <li>
                     Various demos
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    </p>
                 </li>
                 <li>
                   <section>
@@ -249,13 +224,16 @@
         </div>
 
         <div class="row">
-          <div id="tools" class="section">
+          <div id="tools" class="section page">
             <div class="section-logo"><span class="logo-tools">some logo</span></div>
             <h1 class="section-header">Tools</h1>
             <div jq-slider jq-slider-customlink="tools">
               <ul>
                 <li>
                   Various Tools
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  </p>
                 </li>
                 <li>
                   <section>
@@ -270,13 +248,16 @@
         </div>
 
         <div class="row">
-          <div id="education" class="section">
+          <div id="education" class="section page">
             <div class="section-logo"><span class="logo-education">some logo</span></div>
             <h1 class="section-header">Education</h1>
             <div jq-slider jq-slider-customlink="education">
               <ul>
                 <li>
                   Education
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  </p>
                 </li>
                 <li>
                   <section>
@@ -303,13 +284,16 @@
         </div>
 
         <div class="row">
-          <div id="skills" class="section">
+          <div id="skills" class="section page">
             <div class="section-logo"><span class="logo-skills">some logo</span></div>
             <h1 class="section-header">Skills</h1>
             <div jq-slider jq-slider-customlink="skills">
               <ul>
                 <li>
                   Various Skills
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  </p>
                 </li>
                 <li>
                   <section>
@@ -324,13 +308,14 @@
         </div>
 
         <div class="row">
-          <div id="languages" class="section">
+          <div id="languages" class="section page">
             <div class="section-logo"><span class="logo-languages">some logo</span></div>
             <h1 class="section-header">Languages</h1>
             <div jq-slider jq-slider-customlink="languages">
               <ul>
                 <li>
                   English, French
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                 </li>
               </ul>
             </div>
@@ -339,11 +324,14 @@
         </div>
 
         <div class="row">
-          <div id="activities" class="section">
+          <div id="activities" class="section page">
             <div class="section-logo"><span class="logo-activities">some logo</span></div>
             <h1 class="section-header">Activities</h1>
             <div jq-slider jq-slider-customlink="activities">
               <ul>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </li>
                 <li>
                   Microsoft UX workshop
                 </li>
@@ -365,8 +353,36 @@
           </div>
         </div>
 
-        <div id="you" class="row">
-          <div id="you" class="section">
+        <div class="row">
+          <div id="contact" class="section page">
+            <div class="section-logo"><span class="logo-contact">some logo</span></div>
+            <h1 class="section-header">Contact</h1>
+            <div jq-slider jq-slider-customlink="contact">
+              <ul>
+                <li>
+                  <section>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    </p>
+                  </section>
+                </li>
+                <li>
+                  My github
+                </li>
+                <li>
+                  My blog
+                </li>
+                <li>
+                  My tumblr
+                </li>
+              </ul>
+            </div>
+            <div class="slider-nav jq-slider-link-contact" ng-include="'views/jq-slider-nav.html'"></div>
+          </div>
+        </div>
+
+        <div id="you" class="row page">
+          <div id="you" class="section page">
             <div class="section-logo"><span class="logo-you">some logo</span></div>
             <h1 class="section-header">You</h1>
             <div jq-slider jq-slider-customlink="you">
@@ -374,6 +390,12 @@
                 <li>
                   <p>
                     So that's what is between You and Me.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                   </p>
                 </li>
               </ul>
@@ -406,6 +428,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -414,12 +437,14 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <script src="vendor/jquery-sudoslider/js/jquery.sudoSlider.js"></script>
+    <script src="vendor/sausage/jquery-sausage.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
       <script src="scripts/app.js"></script>
       <script src="scripts/directives/slider.js"></script>
       <script src="scripts/directives/scroll-to.js"></script>
+      <script src="scripts/directives/scrollbar-annotate.js"></script>
       <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
 </body>
