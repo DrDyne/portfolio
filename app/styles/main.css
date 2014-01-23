@@ -147,12 +147,13 @@ body::-webkit-scrollbar {
 .section-logo {
   background: white;
 }
-.section-logo span {
+.section-logo .logo {
   height: 50px;
   width: 50px;
   display: block;
   background-color: transparent;
   background-repeat: no-repeat;
+  margin-left: 1px;
 }
 
 .logo-me {
@@ -161,8 +162,10 @@ body::-webkit-scrollbar {
 }
 
 .logo-employments {
+  /*
   background-image: url('/images/tie-50.png');
-  margin-left: 1px;
+  */
+  background-image: url('/images/businessman-48.png');
 }
 
 .logo-demos {
