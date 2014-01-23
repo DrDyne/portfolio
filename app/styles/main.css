@@ -138,10 +138,64 @@ body::-webkit-scrollbar {
 .row .section .section-logo {
   position: absolute;
   top: 10px;
-  left: -20px;
-  background: rgba(127,127,127,1);
+  left: -25px;
+  /*background: rgba(127,127,127,1);*/
   width: 50px;
   height: 50px;
+}
+
+.section-logo {
+  background: white;
+}
+.section-logo span {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.logo-me {
+  background-image: url('/images/glasses-48.png');
+  margin-left: 1px;
+}
+
+.logo-employments {
+  background-image: url('/images/tie-50.png');
+  margin-left: 1px;
+}
+
+.logo-demos {
+  background-image: url('/images/electronics-48.png');
+}
+
+.logo-tools {
+  margin-left: 1px;
+  background-image: url('/images/tool_box-48.png');
+}
+
+.logo-education {
+  background-image: url('/images/graduation_cap-48.png');
+}
+
+.logo-skills {
+  background-image: url('/images/mustache-48.png');
+}
+
+.logo-languages {
+  background-image: url('/images/globe-48.png');
+}
+
+.logo-activities {
+  background-image: url('/images/conference-48.png');
+}
+
+.logo-contact {
+  background-image: url('/images/handshake-48.png');
+}
+
+.logo-you {
+  background-image: url('/images/business_contact-48.png');
 }
 
 [jq-slider] li section {
@@ -190,6 +244,7 @@ section h1 {
 
 .slider-nav .jq-slider-nav {
   position: absolute;
+  cursor: pointer;
 }
 
 .slider-nav .jq-slider-nav-left {
