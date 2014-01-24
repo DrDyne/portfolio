@@ -312,3 +312,10 @@ section h1 {
 .sausage-current .sausage-span {
   display: block;
 }
+
+[demo-angular] #gradient {
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}

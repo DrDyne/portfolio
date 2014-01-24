@@ -13,6 +13,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -173,6 +174,23 @@
                 <li>
                   <section>
                     <h1>Angular</h1>
+                    <div ng-controller="DemoAngularCtrl">
+                    <div demo-angular>
+                      <a href="#" ng-click="handles = initHandles()">Reset</a>
+                      <ol>
+                        <li ng-repeat="color in handles">
+                          <input colorpicker="rgba" type="text" ng-model="color">
+                          <p>handles[$index]: {{$index}} {{handles[$index]}} {{color}}</p>
+                        </li>
+                        <li>
+                          <a ng-click="addHandle()" ng-show="handles.length < 9">add</a>
+                          <a ng-click="removeHandle()" ng-show="handles.length > 2">remove</a>
+                        </li>
+                      </ol>
+                      <div id="gradient" ng-style="gradient"></div>
+                      <p>{{gradient}}</p>
+                      </div>
+                    </div>
                   </section>
                 </li>
                 <li>
@@ -406,7 +424,7 @@
       </div> <!-- div #content -->
 
       <div class="footer">
-        <p>♥ from the Yeoman team</p>
+        <p>♥ ry</p>
       </div>
     </div> <!-- end of ng-controller -->
 
@@ -429,13 +447,14 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
     <!-- endbower -->
     <script src="vendor/jquery-sudoslider/js/jquery.sudoSlider.js"></script>
     <script src="vendor/sausage/jquery-sausage.js"></script>
@@ -447,6 +466,7 @@
       <script src="scripts/directives/scroll-to.js"></script>
       <script src="scripts/directives/scrollbar-annotate.js"></script>
       <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/controllers/demo-angular.js"></script>
     <!-- endbuild -->
 </body>
 </html>
