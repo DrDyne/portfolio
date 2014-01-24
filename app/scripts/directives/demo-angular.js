@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('portfolioApp')
-.directive('demoAngular', ['$window', function (window) {
+.directive('demoAngular', [function () {
   return {
-    restrict: 'E',
-    compile: function (scope, element, attrs) {
+    restrict: 'A',
+    templateUrl: 'views/demo-angular.html',
   }
 }]);
