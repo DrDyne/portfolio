@@ -335,3 +335,21 @@ a:link, a:visited {
 a:hover, a:active {
   color: #f7977a;
 }
+
+#twenty [blur="small"] {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+}
+
+#twenty [blur="regular"] {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+}
+
+#twenty [blur="extra"] {
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+}
