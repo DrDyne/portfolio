@@ -170,25 +170,36 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                     </p>
+                    <p>
+                      I currently work on  <span class="jq-slider-link-demos"><a href="#" class="jq-slider-link" rel="2">Angular</a></span>
+                    </p>
+                    <p>
+                      I know <span class="jq-slider-link-demos"><a href="#" class="jq-slider-link" rel="3">Backbone</a></span> very well, although I use its full potential when coupled with Marionette.js
+                    </p>
+                    <p>
+                      Of course, I know my <span class="jq-slider-link-demos"><a href="#" class="jq-slider-link" rel="4">jQuery</a></span>-fu.
+                    </p>
+                    <p>
+                      We do <span class="jq-slider-link-demos"><a href="#" class="jq-slider-link" rel="5">Test Driven Development (TDD)</a></span>.
+                    </p>
                 </li>
                 <li>
                   <section>
                     <h1>Angular</h1>
                     <div ng-controller="DemoAngularCtrl">
-                    <div demo-angular>
-                      <a href="#" ng-click="handles = initHandles()">Reset</a>
-                      <ol>
-                        <li ng-repeat="color in handles">
-                          <input colorpicker="rgba" type="text" ng-model="color">
-                          <p>handles[$index]: {{$index}} {{handles[$index]}} {{color}}</p>
-                        </li>
-                        <li>
-                          <a ng-click="addHandle()" ng-show="handles.length < 9">add</a>
-                          <a ng-click="removeHandle()" ng-show="handles.length > 2">remove</a>
-                        </li>
-                      </ol>
-                      <div id="gradient" ng-style="gradient"></div>
-                      <p>{{gradient}}</p>
+                    <div demo-angular ng-init="colors = ['#ffe600', 'rgba(255,230,0,0.5)', 'transparent', 'rgba(255,127,127,0.5)', 'red']">
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <div ng-repeat="color in colors track by $index" class="row">
+                            <div class="col-xs-12">
+                              <input colorpicker="rgba" type="text" ng-model="colors[$index]" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-9">
+                          <div id="gradient" ng-style="gradient"></div>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   </section>
@@ -447,14 +458,14 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-		<script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
+    <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
     <!-- endbower -->
     <script src="vendor/jquery-sudoslider/js/jquery.sudoSlider.js"></script>
     <script src="vendor/sausage/jquery-sausage.js"></script>

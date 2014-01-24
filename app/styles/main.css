@@ -201,6 +201,10 @@ body::-webkit-scrollbar {
   background-image: url('/images/business_contact-48.png');
 }
 
+[jq-slider] {
+  height: auto !important;
+}
+
 [jq-slider] li section {
   padding-right: 10px;
 }
@@ -316,6 +320,6 @@ section h1 {
 [demo-angular] #gradient {
   display: block;
   width: 100%;
-  height: 80px;
+  height: 170px;
   margin: 0 auto;
 }
