@@ -9,11 +9,13 @@ function ($scope) {
   $scope.updateGradient = function (colors) {
 
     var style = [];
-    style.push('background: linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
-    style.push('background: -webkit-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
-    style.push('background: -moz-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
-    style.push('background: -o-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
-    $scope.gradient = style.join(';');
+    style.push('background: linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent;');
+    style.push('background: -webkit-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent;');
+    style.push('background: -moz-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent;');
+    style.push('background: -o-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent;');
+    $scope.gradient = style.join('');
+    $scope.gradientDisplay = style;
+
   };
 
   $scope.addHandle = function () {
