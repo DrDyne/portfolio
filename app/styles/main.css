@@ -323,3 +323,15 @@ section h1 {
   height: 170px;
   margin: 0 auto;
 }
+
+a:link, a:visited {
+  color: #6ecff6;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover, a:active {
+  color: #f7977a;
+}

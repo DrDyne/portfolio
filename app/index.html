@@ -187,7 +187,7 @@
                   <section>
                     <h1>Angular</h1>
                     <div ng-controller="DemoAngularCtrl">
-                    <div demo-angular ng-init="colors = ['#ffe600', 'rgba(255,230,0,0.5)', 'transparent', 'rgba(255,127,127,0.5)', 'red']">
+                    <div demo-angular ng-init="colors = initColors()">
                       <div class="row">
                         <div class="col-xs-3">
                           <div ng-repeat="color in colors track by $index" class="row">
@@ -195,6 +195,7 @@
                               <input colorpicker="rgba" type="text" ng-model="colors[$index]" class="form-control">
                             </div>
                           </div>
+                          <a href="#" ng-click="colors = initColors()" class="pull-right">reset colors</a>
                         </div>
                         <div class="col-xs-9">
                           <div id="gradient" ng-style="gradient"></div>
