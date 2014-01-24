@@ -1,0 +1,22 @@
+<div ng-init="colors = initColors()" class="row">
+  <div class="col-xs-3">
+    <h3>Colors</h3>
+    <div ng-repeat="color in colors track by $index" class="row">
+      <div class="col-xs-12">
+      <div class="input-group">
+        <input colorpicker="rgba" colorpicker-position="left" type="text" ng-model="colors[$index]" class="form-control">
+        <span ng-click="clearColor($index)" ng-show="definedColors > 2"class="input-group-addon"><a href="#">X</a></span>
+      </div>
+      </div>
+    </div>
+    <a href="#" ng-click="colors = initColors()" class="pull-right">reset colors</a>
+  </div>
+  <div class="col-xs-9">
+    <h3>Preview</h3>
+    <div id="gradient" style="{{gradient}}"></div>
+    <h3>Output</h3>
+    <div ng-repeat="style in gradientDisplay">
+      <pre>{{style}}</pre>
+    </div>
+  </div>
+</div>

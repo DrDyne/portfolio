@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-xs-3">
+    <h3>Settings</h3>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <div class="dropdown blur-o-meter">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              Blur-o-meter
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li role="presentation">
+                <a href="#" role="menuitem" blur="small">Not so blurry</a>
+              </li>
+              <li role="presentation">
+                <a href="#" role="menuitem" blur="regular" >Regular blurry</a>
+              </li>
+              <li role="presentation">
+                <a href="#" role="menuitem" blur="extra" >Extra blurry</a>
+              </li>
+              <li class="divider"></li>
+              <li role="presentation">
+                <a href="#" role="menuitem" blur="" >Wrong value (empty string)</a>
+              </li>
+              <li role="presentation">
+                <a href="#" role="menuitem" blur="42" >Wrong value (integer)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-9">
+    <h3>Backbone</h3>
+    <p>
+      Use the control to see the kitten. It also works on mobile devices!
+      This demonstrates how to isolate a jquery plugin behind a Backbone View coupled to a Model in order to gain finer control on the output.
+      The View updates the Model and renders asynchronously once
+    </p>
+    <p class="mute">
+      Note:
+      I used a setTimeout to render the Backbone view for the sake of simplicity (this page is entirely controlled by Angular).
+    </p>
+    <h3>Output</h3>
+    <div id="twenty">
+      <img class="left" src="http://placekitten.com/410/300" />
+      <img class="right" blur="regular" src="http://placekitten.com/410/300" />
+    </div>
+    <div class="alert alert-error"></div>
+  </div>
+</div>

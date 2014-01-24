@@ -14,6 +14,8 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
+    <!--<link rel="stylesheet" href="vendor/twentytwenty/css/foundation.css"/>-->
+    <link rel="stylesheet" href="vendor/twentytwenty/css/twentytwenty.css"/>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -190,36 +192,16 @@
                   <section>
                     <h1>Angular</h1>
                     <div ng-controller="DemoAngularCtrl">
-                    <div demo-angular ng-init="colors = initColors()">
-                      <div class="row">
-                        <div class="col-xs-3">
-                          <h3>Colors</h3>
-                          <div ng-repeat="color in colors track by $index" class="row">
-                            <div class="col-xs-12">
-                            <div class="input-group">
-                              <input colorpicker="rgba" colorpicker-position="left" type="text" ng-model="colors[$index]" class="form-control">
-                              <span ng-click="clearColor($index)" ng-show="definedColors > 2"class="input-group-addon">X</span>
-                            </div>
-                            </div>
-                          </div>
-                          <a href="#" ng-click="colors = initColors()" class="pull-right">reset colors</a>
-                        </div>
-                        <div class="col-xs-9">
-                          <h3>Preview</h3>
-                          <div id="gradient" style="{{gradient}}"></div>
-                          <h3>Output</h3>
-                          <div ng-repeat="style in gradientDisplay">
-                            <pre>{{style}}</pre>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
+                      <div demo-angular></div>
                     </div>
                   </section>
                 </li>
                 <li>
                   <section>
                     <h1>Backbone</h1>
+                    <div>
+                      <div demo-backbone></div>
+                    </div>
                   </section>
                 </li>
                 <li>
@@ -484,9 +466,13 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/backbone/backbone-min.js"></script>
     <!-- endbower -->
     <script src="vendor/jquery-sudoslider/js/jquery.sudoSlider.js"></script>
     <script src="vendor/sausage/jquery-sausage.js"></script>
+    <script src="vendor/twentytwenty/js/jquery.twentytwenty.js"></script>
+    <script src="vendor/twentytwenty/js/jquery.event.move.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -494,6 +480,8 @@
       <script src="scripts/directives/slider.js"></script>
       <script src="scripts/directives/scroll-to.js"></script>
       <script src="scripts/directives/scrollbar-annotate.js"></script>
+      <script src="scripts/directives/demo-angular.js"></script>
+      <script src="scripts/directives/demo-backbone.js"></script>
       <script src="scripts/controllers/main.js"></script>
       <script src="scripts/controllers/demo-angular.js"></script>
     <!-- endbuild -->
