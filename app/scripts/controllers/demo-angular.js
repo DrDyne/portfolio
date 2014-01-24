@@ -4,15 +4,16 @@ angular.module('portfolioApp')
 .controller('DemoAngularCtrl', [
   '$scope',
 function ($scope) {
-  $scope.initColors = function () { return ['#ffe600', 'rgba(255,230,0,0.5)', 'transparent', 'rgba(255,127,127,0.5)', 'red'] }
+  $scope.initColors = function () { return ['#a2d39c', '#a2d39c', '#7bcdc8', 'rgb(110,207,246)', 'transparent'] }
 
   $scope.updateGradient = function (colors) {
-    var gradient = [];
-    angular.forEach($scope.colors, function (value, index) { gradient.push(value) });
 
-    $scope.gradient = {
-      background: '-webkit-linear-gradient(left, ' + gradient.join(', ') + ') transparent',
-    };
+    var style = [];
+    style.push('background: linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
+    style.push('background: -webkit-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
+    style.push('background: -moz-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
+    style.push('background: -o-linear-gradient(left, ' + $scope.colors.join(', ') + ') transparent');
+    $scope.gradient = style.join(';');
   };
 
   $scope.addHandle = function () {
