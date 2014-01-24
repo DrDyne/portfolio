@@ -6,9 +6,20 @@ angular.module('portfolioApp')
 function ($scope) {
   $scope.initColors = function () { return ['', '#a2d39c', '#7bcdc8', 'rgb(110,207,246)', 'transparent'] }
 
-  $scope.updateGradient = function () {
+  var getDefinedColors = function () {
     var colors = [];
     angular.forEach($scope.colors, function (color) { if ( !!color ) colors.push(color) });
+    return colors;
+  };
+
+  $scope.clearColor = function (index) {
+    var colors = getDefinedColors();
+    if ( colors.length < 3 ) return;
+    $scope.colors[index] = '';
+  };
+
+  $scope.updateGradient = function () {
+    var colors = getDefinedColors();
 
     var style = [];
     style.push('background: linear-gradient(left, ' + colors.join(', ') + ') transparent;');
@@ -17,7 +28,7 @@ function ($scope) {
     style.push('background: -o-linear-gradient(left, ' + colors.join(', ') + ') transparent;');
     $scope.gradient = style.join('');
     $scope.gradientDisplay = style;
-
+    $scope.definedColors = colors.length;
   };
 
   $scope.addHandle = function () {
