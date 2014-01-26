@@ -353,3 +353,7 @@ a:hover, a:active {
   -webkit-filter: blur(12px);
   -moz-filter: blur(12px);
 }
+
+[demo-backbone] .history {
+  margin-top: 20px;
+}

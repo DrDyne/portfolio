@@ -1,53 +1,39 @@
 <div class="row">
-  <div class="col-xs-3">
-    <h3>Settings</h3>
+  <div class="col-xs-12 col-sm-3">
+    <h3>Blur-o-meter</h3>
     <div class="row">
-      <div class="col-xs-12">
-        <div class="input-group">
-          <div class="dropdown blur-o-meter">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-              Blur-o-meter
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li role="presentation">
-                <a href="#" role="menuitem" blur="small">Not so blurry</a>
-              </li>
-              <li role="presentation">
-                <a href="#" role="menuitem" blur="regular" >Regular blurry</a>
-              </li>
-              <li role="presentation">
-                <a href="#" role="menuitem" blur="extra" >Extra blurry</a>
-              </li>
-              <li class="divider"></li>
-              <li role="presentation">
-                <a href="#" role="menuitem" blur="" >Wrong value (empty string)</a>
-              </li>
-              <li role="presentation">
-                <a href="#" role="menuitem" blur="42" >Wrong value (integer)</a>
-              </li>
-            </ul>
-          </div>
+      <div class="col-xs-6 col-sm-12">
+        <div class="btn-group-vertical blur-o-meter">
+          <button class="btn btn-default" blur="small" type="button">Not so blury</button>
+          <button class="btn btn-default" blur="regular" type="button">Medium blury</button>
+          <button class="btn btn-default" blur="extra" type="button">Extra blury</button>
+          <button class="btn btn-default" blur="42" type="button">Integer (error)</button>
+          <button class="btn btn-default" blur type="button">Empty string (error)</button>
         </div>
+      </div>
+      <div class="col-xs-6 col-md-12">
+        <div class="history">
+        </div>
+        <a href="#" class="clear-history pull-right">clear history</a>
       </div>
     </div>
   </div>
-  <div class="col-xs-9">
+  <div class="col-xs-12 col-sm-9">
     <h3>Backbone</h3>
-    <p>
-      Use the control to see the kitten. It also works on mobile devices!
+    <p class="small">
       This demonstrates how to isolate a jquery plugin behind a Backbone View coupled to a Model in order to gain finer control on the output.
       The View updates the Model and renders asynchronously once
     </p>
-    <p class="mute">
+    <p class="small">
       Note:
       I used a setTimeout to render the Backbone view for the sake of simplicity (this page is entirely controlled by Angular).
+      History length is limited to 5 entries by default. The History collection exposes methods to the View so that all history-related logic is done internally.
+      Please take a look on how separated the concerns are between model, collection (and its model), and the view.
     </p>
     <h3>Output</h3>
     <div id="twenty">
       <img class="left" src="http://placekitten.com/410/300" />
       <img class="right" blur="regular" src="http://placekitten.com/410/300" />
     </div>
-    <div class="alert alert-error"></div>
   </div>
 </div>
