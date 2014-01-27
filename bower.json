@@ -13,7 +13,8 @@
     "angular-route": "1.2.5",
     "angular-bootstrap-colorpicker": "~3.0.4",
     "backbone": "~1.1.0",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "stroll": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.5",

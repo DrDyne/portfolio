@@ -20,6 +20,7 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/demo.css">
     <!-- endbuild -->
   </head>
   <body ng-app="portfolioApp" data-spy="scroll" data-target="#nav-top">
@@ -206,7 +207,10 @@
                 </li>
                 <li>
                   <section class="col-sm-12">
-                    <h1>jQuery</h1>
+                    <h1>jQuery/css</h1>
+                    <div>
+                      <div demo-jquery-css></div>
+                    </div>
                   </section>
                 </li>
                 <li>
@@ -482,6 +486,7 @@
       <script src="scripts/directives/scrollbar-annotate.js"></script>
       <script src="scripts/directives/demo-angular.js"></script>
       <script src="scripts/directives/demo-backbone.js"></script>
+      <script src="scripts/directives/demo-jquery-css.js"></script>
       <script src="scripts/controllers/main.js"></script>
       <script src="scripts/controllers/demo-angular.js"></script>
     <!-- endbuild -->
