@@ -44,14 +44,15 @@ angular.module('portfolioApp')
       });
 
       $('#switch-button').switchButton({
-        //width: 100,
-        //height: 40,
-        //button_width: 50,
+        //show_labels: false,
+        width: 50,
+        height: 20,
+        button_width: 25,
         labels_placement: "right",
+
       }).bind('change', function (event) {
         var isChecked = $(event.currentTarget).is(':checked');
-        var $target = $('#neon');
-        $target[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
+        $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
       });
 
     },
