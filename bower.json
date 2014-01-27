@@ -14,7 +14,8 @@
     "angular-bootstrap-colorpicker": "~3.0.4",
     "backbone": "~1.1.0",
     "lodash": "~2.4.1",
-    "stroll": "*"
+    "stroll": "*",
+    "jquery-switchbutton": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.5",
