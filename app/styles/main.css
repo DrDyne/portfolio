@@ -351,3 +351,7 @@ a:hover, a:active {
 [demo-backbone] .history {
   margin-top: 20px;
 }
+
+.jasmine-passed-icon, .jasmine-failed-icon {
+  font-weight: bold;
+}

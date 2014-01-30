@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="bower_components/jquery-switchbutton/jquery.switchButton.css"/>
     <!--<link rel="stylesheet" href="vendor/twentytwenty/css/foundation.css"/>-->
     <link rel="stylesheet" href="vendor/twentytwenty/css/twentytwenty.css"/>
+    <link rel="stylesheet" href="vendor/jasmine/lib/jasmine-core/jasmine.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -216,7 +217,8 @@
                 </li>
                 <li>
                   <section class="col-sm-12">
-                    <h1>TDD</h1>
+                    <h1>Jasmine</h1>
+                    <div demo-tdd></div>
                   </section>
                 </li>
                 <li>
@@ -368,6 +370,9 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, accumsan feugiat semper a, bibendum ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis magna ac dolor malesuada ultricies quis vel quam. Pellentesque eget porttitor ipsum. Morbi ut dui imperdiet, elementum lorem quis, pellentesque sem. Pellentesque eget congue nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                 </li>
                 <li>
+                  Confoo 2012, 2013
+                </li>
+                <li>
                   Microsoft UX workshop
                 </li>
                 <li>
@@ -479,6 +484,9 @@
     <script src="vendor/sausage/jquery-sausage.js"></script>
     <script src="vendor/twentytwenty/js/jquery.twentytwenty.js"></script>
     <script src="vendor/twentytwenty/js/jquery.event.move.js"></script>
+    <script src="vendor/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script src="vendor/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="vendor/jasmine-jsreporter.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -489,6 +497,7 @@
       <script src="scripts/directives/demo-angular.js"></script>
       <script src="scripts/directives/demo-backbone.js"></script>
       <script src="scripts/directives/demo-jquery-css.js"></script>
+      <script src="scripts/directives/demo-tdd.js"></script>
       <script src="scripts/controllers/main.js"></script>
       <script src="scripts/controllers/demo-angular.js"></script>
     <!-- endbuild -->

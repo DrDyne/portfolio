@@ -49,7 +49,6 @@ angular.module('portfolioApp')
         height: 20,
         button_width: 25,
         labels_placement: "right",
-
       }).bind('change', function (event) {
         var isChecked = $(event.currentTarget).is(':checked');
         $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
