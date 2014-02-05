@@ -16,7 +16,8 @@
     "backbone": "~1.1.0",
     "lodash": "~2.4.1",
     "stroll": "*",
-    "jquery-switchbutton": "*"
+    "jquery-switchbutton": "*",
+    "jquery-ui": "~1.10.3"
   },
   "devDependencies": {
     "angular-mocks": "1.2.5",
