@@ -79,6 +79,11 @@ body {
 }
 
 @font-face {
+  font-family: 'Nes';
+  src: url('../fonts/PressStart2P.ttf');
+}
+
+@font-face {
   font-family: 'Bellerose';
   src: url('../fonts/Bellerose.ttf');
 }
@@ -352,6 +357,50 @@ a:hover, a:active {
   margin-top: 20px;
 }
 
+[passed="true"], [passed="true"] a {
+  color: #5e7d00 !important;
+}
+
+[passed="false"], [passed="false"] a {
+  color: #b03911 !important;
+}
+
+.jasmine-failed-description {
+  font-weight: bold;
+}
+
+
 .jasmine-passed-icon, .jasmine-failed-icon {
   font-weight: bold;
+}
+
+.bg-mario-container {
+  position: relative;
+  min-height: 140px;
+}
+
+.bg-mario-text {
+  font-family: 'Nes';
+  padding: 20px 0 40px;
+}
+
+#HTMLReporter .alert .bg-mario {
+  min-height: 140px;
+  background-image: url('/images/mario-toad.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  position: absolute;
+  top: -43px;
+  left: 0;
+  right: 0;
+}
+
+.bg-mario-ground {
+  min-height: 140px;
+  background-image: url('/images/ground.png');
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
