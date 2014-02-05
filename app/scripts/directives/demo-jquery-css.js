@@ -51,7 +51,9 @@ angular.module('portfolioApp')
         labels_placement: "right",
       }).bind('change', function (event) {
         var isChecked = $(event.currentTarget).is(':checked');
-        $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
+        $('.neon-container').animate({'background-color': (!isChecked? 'transparent' : '#222')}, function () {
+          $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
+        });
       });
 
     },

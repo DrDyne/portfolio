@@ -59,7 +59,7 @@ angular.module('portfolioApp')
           _.forEach(this.collection.invoke('message'), function (message) {
             var el = _.template(template, message);
             console.log(el);
-            $history.append(el);
+            $history.prepend(el);
           });
           this.renderClearHistoryLink();
         },
@@ -70,7 +70,7 @@ angular.module('portfolioApp')
         },
 
         tpl: {
-          message: '<p class="text-<%= type %>"><%= content %></p>',
+          message: '<li class="text-<%= type %>"><%= content %></li>',
         },
       });
 

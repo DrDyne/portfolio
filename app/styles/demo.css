@@ -64,12 +64,17 @@
 }
 
 .neon-container {
+  border-radius: 6px;
+}
+.neon-container.dark-bg {
   background-color: #222;
 }
 
 #neon {
   font-family: Bellerose;
   font-size: 4em;
+  min-height: 140px;
+  padding-bottom: 10px;
 }
 
 #super-hero {

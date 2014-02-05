@@ -4,8 +4,8 @@ angular.module('portfolioApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
+  'ngAnimate',
   'colorpicker.module'
-  //'ngRoute'
 ])
 .config(function () {
 });

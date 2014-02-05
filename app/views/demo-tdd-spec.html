@@ -1,0 +1,6 @@
+<div class="specSummary" passed="{{spec.passed}}">
+  <a class="description" href="#" title="{{spec.description}}">{{spec.description}}</a>
+  <span class="jasmine-passed-icon pull-right" ng-if="spec.passed">&#10003</span>
+  <span class="jasmine-failed-icon pull-right" ng-if="!spec.passed">x</span>
+  <p class="jasmine-failed-description" ng-repeat="failure in spec.failures" passed="false"> {{failure.message}} </p>
+</div>
