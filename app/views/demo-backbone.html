@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-xs-12 col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
     <h3>Blur-o-meter</h3>
     <div class="row">
       <div class="col-xs-6 col-sm-12">
@@ -11,25 +11,14 @@
           <button class="btn btn-default" blur type="button">Empty string (error)</button>
         </div>
       </div>
-      <div class="col-xs-6 col-md-12">
-        <ol class="history">
-        </ol>
-        <a href="#" class="clear-history pull-right">clear history</a>
-      </div>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-9">
-    <h3>Backbone</h3>
-    <p class="small">
-      This demonstrates how to isolate a jquery plugin behind a Backbone View coupled to a Model in order to gain finer control on the output.
-      The View updates the Model and renders asynchronously once
-    </p>
-    <p class="small">
-      Note:
-      I used a setTimeout to render the Backbone view for the sake of simplicity (this page is entirely controlled by Angular).
-      History length is limited to 5 entries by default. The History collection exposes methods to the View so that all history-related logic is done internally.
-      Please take a look on how separated the concerns are between model, collection (and its model), and the view.
-    </p>
+  <div class="col-xs-6 col-sm-6 col-md-3">
+    <h3>History</h3>
+    <ol class="history"></ol>
+    <a href="#" class="clear-history pull-right">clear history</a>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6">
     <h3>Output</h3>
     <div id="twenty">
       <img class="left" src="http://placekitten.com/410/180" />

@@ -19,7 +19,7 @@ angular.module('portfolioApp')
 
       $scope.initJasmine = function () {
         var jasmineEnv = jasmine.getEnv();
-        jasmineEnv.updateInterval = 1000;
+        jasmineEnv.updateInterval = 0;
         jasmineEnv.addReporter(new jasmine.JSReporter());
 
         var runner = jasmineEnv.currentRunner();
@@ -28,7 +28,7 @@ angular.module('portfolioApp')
         runner.finishCallback = function wrapper () {
           onFinish.apply(runner, arguments);
           $scope.tests = jasmine.getJSReport();
-          console.log($scope.tests);
+          //console.log($scope.tests);
           var nbSpecs = {
             passing: 0,
             failing: 0,
@@ -57,7 +57,7 @@ angular.module('portfolioApp')
           reward: scope.quest.reward.toLowerCase(),
           location: scope.quest.location.toLowerCase(),
         };
-        console.log(scope, this);
+        //console.log(scope, this);
       };
 
       describe('Hero', function () {

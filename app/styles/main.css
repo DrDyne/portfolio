@@ -116,6 +116,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.scroll-text {
+  position: absolute;
+  left: -105px;
+  text-align: right;
+  width: 80px;
+  color: #ddd;
+}
+
 #nav-top .active a {
   color: white;
 }
@@ -124,7 +132,7 @@ body::-webkit-scrollbar {
   margin: 0;
 }
 
-.row {
+body > .container > .content > .row {
   background-color: white;
 }
 
@@ -132,32 +140,41 @@ body::-webkit-scrollbar {
   position: relative;
   background-color: white;
   max-width: 920px;
-  padding-left: 40px;
-  margin-left: 40px;
+  padding-left: 80px;
+  //padding-left: 40px;
+  //margin-left: 40px;
   margin-bottom: 40px;
-  border-left: 1px solid black;
   border-top: 80px solid white;
 }
 
 .row .section .section-logo {
   position: absolute;
   top: 10px;
-  left: -25px;
+  left: 10px;
   /*background: rgba(127,127,127,1);*/
   width: 50px;
   height: 50px;
+  z-index: 1;
 }
 
-.section-logo {
-  background: white;
+.row .section .section-logo-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 34px;
+  border-left: 1px solid black
 }
+
 .section-logo .logo {
   height: 50px;
   width: 50px;
   display: block;
-  background-color: transparent;
+  background-color: white;
   background-repeat: no-repeat;
   margin-left: 1px;
+}
+
+.logo.sticked-top {
 }
 
 .logo-me {
@@ -278,10 +295,10 @@ section h1 {
 
 
 .sausage-set {
-  position: fixed; 
+  position: fixed;
   right: 0;
   top: 0px;
-  width: 20px;
+  width: 0px;
   height: 100%;
   background-color: white;
   z-index: 1031;
@@ -299,7 +316,7 @@ section h1 {
 
 .sausage-span {
   position: absolute;
-  right: 20px;
+  right: 0px;
   top: 0px;
   z-index: 2;
   padding: 5px;
@@ -355,6 +372,9 @@ a:hover, a:active {
   color: #f7977a;
 }
 
+#twenty {
+  height: 180px;
+}
 #twenty [blur="small"] {
   filter: blur(3px);
   -webkit-filter: blur(3px);
@@ -433,4 +453,8 @@ a:hover, a:active {
 }
 
 .tool.tool-vim {
+}
+
+[demo-tdd] {
+  min-height: 413px;
 }

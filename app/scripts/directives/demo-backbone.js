@@ -14,7 +14,7 @@ angular.module('portfolioApp')
 
         initialize: function (options) {
           var self = this;
-          setTimeout(self.render.bind(self), 1000);
+          setTimeout(self.render.bind(self), 600);
           this.listenTo(this.model, 'change:blur', this.renderBlur, this);
 
           this.listenTo(this.model, 'change:blur', this.updateHistory.bind(this, 'success'));

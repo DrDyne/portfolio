@@ -3,7 +3,7 @@
 angular.module('portfolioApp')
 .directive('demoJqueryCss', [function () {
   return {
-    restrict: 'A',
+    restrict: 'E',
     templateUrl: 'views/demo-jquery-css.html',
     controller: function ($scope, $element) {
       $.widget('demo.superHero', {
@@ -51,7 +51,7 @@ angular.module('portfolioApp')
         labels_placement: "right",
       }).bind('change', function (event) {
         var isChecked = $(event.currentTarget).is(':checked');
-        $('.neon-container').animate({'background-color': (!isChecked? 'transparent' : '#222')}, function () {
+        $('.neon-container-well').animate({'background-color': (!isChecked? 'transparent' : '#222')}, function () {
           $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
         });
       });
