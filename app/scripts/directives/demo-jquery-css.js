@@ -52,7 +52,9 @@ angular.module('portfolioApp')
       }).bind('change', function (event) {
         var isChecked = $(event.currentTarget).is(':checked');
         $('.neon-container-well').animate({'background-color': (!isChecked? 'transparent' : '#222')}, function () {
-          $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
+          setTimeout(function () {
+            $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
+          }, 500);
         });
       });
 
