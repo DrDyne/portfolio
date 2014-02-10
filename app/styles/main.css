@@ -5,10 +5,10 @@ body {
 }
 
 body {
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  user-select: none;
+  //-webkit-user-select: none;
+  //-moz-user-select: -moz-none;
+  //-ms-user-select: none;
+  //user-select: none;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -454,12 +454,13 @@ img.activity {
 }
 
 .tool {
-  max-height: 300px;
+  max-height: 99px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-.tool.tool-vim {
+.tool .tool-horizontal {
+  display: inline-block;
 }
 
 [demo-tdd] {
