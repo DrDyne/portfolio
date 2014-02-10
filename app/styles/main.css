@@ -361,7 +361,10 @@ section h1 {
 }
 
 a:link, a:visited {
-  color: #6ecff6;
+  color: #d80000;
+  /*color: #e61717;*/
+  font-weight: bold;
+  /*color: #6ecff6;*/
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -446,6 +449,10 @@ a:hover, a:active {
   right: 0;
 }
 
+img.activity {
+  margin: 0 auto;
+}
+
 .tool {
   max-height: 300px;
   margin: 0 auto;
@@ -457,4 +464,8 @@ a:hover, a:active {
 
 [demo-tdd] {
   min-height: 413px;
+}
+
+#you > .row {
+height: 1024px;
 }
