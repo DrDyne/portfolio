@@ -360,10 +360,15 @@ section h1 {
   font-size: 0.8em;
 }
 
+p > a:link, p > a:visited {
+  font-size: 1.2em;
+}
+
 a:link, a:visited {
-  color: #d80000;
+  color: red;
+  opacity: 0.8;
   /*color: #e61717;*/
-  font-weight: bold;
+  /*font-weight: bold;*/
   /*color: #6ecff6;*/
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -372,7 +377,9 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  color: #f7977a;
+  /*color: #f7977a;*/
+  opacity: 1;
+  font-size: 1em;
 }
 
 #twenty {
@@ -451,6 +458,7 @@ a:hover, a:active {
 
 img.activity {
   margin: 0 auto;
+  max-height: 99px;
 }
 
 .tool {
