@@ -104,6 +104,11 @@ body {
   src: url('../fonts/Florence-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Respective';
+  src: url('../fonts/Respective.ttf');
+}
+
 body {
   padding-top: 40px;
   background-image: url('/images/bg.png');
@@ -477,4 +482,16 @@ img.activity {
 
 #you > .row {
 height: 1024px;
+}
+
+.uline {
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #666;
+}
+
+.beautiful {
+  font-family: Respective;
+  font-size: 3.2em;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px #999;
 }

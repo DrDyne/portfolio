@@ -11,6 +11,7 @@ angular.module('portfolioApp')
           speed: 400,
           steps: 3,
           target: undefined,
+          preventDefault: true,
         },
 
         _create: function () {
@@ -21,7 +22,8 @@ angular.module('portfolioApp')
 
         bindEvents: function (self) {
           for ( var event in self.options.trigger ) {
-            $(self.options.trigger[event]).bind(event, function () {
+            $(self.options.trigger[event]).bind(event, function (e) {
+              if ( self.options.preventDefault ) e.preventDefault();
               setTimeout(function () { self.animate(self) }, self.options.speed);
             });
           }
