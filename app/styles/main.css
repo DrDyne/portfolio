@@ -152,6 +152,10 @@ body > .container > .content > .row {
   border-top: 80px solid white;
 }
 
+section {
+  padding-right: 10px;
+}
+
 .row .section .section-logo {
   position: absolute;
   top: 10px;
@@ -480,9 +484,11 @@ img.activity {
   min-height: 413px;
 }
 
+/*
 #you > .row {
 height: 1024px;
 }
+*/
 
 .uline {
   font-size: 1.3em;

@@ -5,11 +5,11 @@
       <div class="col-xs-12">
       <div class="input-group">
         <input colorpicker="rgba" colorpicker-position="left" type="text" ng-model="colors[$index]" class="form-control">
-        <span ng-click="clearColor($index)" ng-show="definedColors > 2"class="input-group-addon"><a href="#">X</a></span>
+        <span ng-click="clearColor($index)" ng-show="definedColors > 2"class="input-group-addon"><a href>X</a></span>
       </div>
       </div>
     </div>
-    <a href="#" ng-click="colors = initColors()" class="pull-right">reset colors</a>
+    <a href ng-click="colors = initColors()" class="pull-right">reset colors</a>
   </div>
   <div class="col-xs-12 col-sm-9">
     <h3>Preview</h3>

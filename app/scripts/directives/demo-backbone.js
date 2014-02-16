@@ -42,7 +42,8 @@ angular.module('portfolioApp')
           $img.attr('blur', this.model.get('blur'));
         },
 
-        clearHistory: function () {
+        clearHistory: function (event) {
+          event.preventDefault();
           this.collection.clear();
         },
 
@@ -58,7 +59,6 @@ angular.module('portfolioApp')
 
           _.forEach(this.collection.invoke('message'), function (message) {
             var el = _.template(template, message);
-            console.log(el);
             $history.prepend(el);
           });
           this.renderClearHistoryLink();
