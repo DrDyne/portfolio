@@ -4,8 +4,8 @@
     <div ng-repeat="color in colors track by $index" class="row">
       <div class="col-xs-12">
       <div class="input-group">
-        <input colorpicker="rgba" colorpicker-position="left" type="text" ng-model="colors[$index]" class="form-control">
-        <span ng-click="clearColor($index)" ng-show="definedColors > 2"class="input-group-addon"><a href>X</a></span>
+        <input placeholder="Enter a color" colorpicker="rgba" colorpicker-position="left" type="text" ng-model="colors[$index]" class="form-control">
+        <span ng-click="clearColor($index)" ng-show="!!color" class="input-group-addon"><a href>X</a></span>
       </div>
       </div>
     </div>

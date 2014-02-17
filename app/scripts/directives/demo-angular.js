@@ -16,30 +16,25 @@ angular.module('portfolioApp')
 
       $scope.clearColor = function (index) {
         var colors = getDefinedColors();
-        if ( colors.length < 3 ) return;
         $scope.colors[index] = '';
       };
 
       $scope.updateGradient = function () {
         var colors = getDefinedColors();
-
         var style = [];
-        style.push('background: linear-gradient(left, ' + colors.join(', ') + ') transparent;');
-        style.push('background: -webkit-linear-gradient(left, ' + colors.join(', ') + ') transparent;');
-        style.push('background: -moz-linear-gradient(left, ' + colors.join(', ') + ') transparent;');
+
+        if ( !colors.length ) style.push('');
+        else {
+          if ( colors.length === 1 ) style.push('background-color: ' + colors[0] + ';');
+          else {
+            style.push('background: linear-gradient(left, ' + colors.join(', ') + ') transparent;');
+            style.push('background: -webkit-linear-gradient(left, ' + colors.join(', ') + ') transparent;');
+            style.push('background: -moz-linear-gradient(left, ' + colors.join(', ') + ') transparent;');
+          }
+        }
+
         $scope.gradient = style.join('');
         $scope.gradientDisplay = style;
-        $scope.definedColors = colors.length;
-      };
-
-      $scope.addHandle = function () {
-        if ( $scope.handles.length === 5 ) return;
-        var color = randomColor();
-        $scope.handles.push(randomColor());
-      };
-
-      $scope.removeHandle = function () {
-        $scope.handles.pop();
       };
 
       $scope.$watch('colors | filter:"!!"', $scope.updateGradient, true);
