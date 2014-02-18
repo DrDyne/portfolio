@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         message: 'Built %sourceName% v%version% from commit %sourceCommit% on branch %sourceBranch%',
       },
       pages: {
-        remote: 'git@github.com:DrDyne/portfolio.git',
+        remote: 'https://github.com/DrDyne/portfolio.git',
         branch: 'gh-pages',
       },
 
