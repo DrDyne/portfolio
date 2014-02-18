@@ -25,6 +25,20 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    // deploys to different environments
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% v%version% from commit %sourceCommit% on branch %sourceBranch%',
+      },
+      pages: {
+        remote: 'git@github.com/DrDyne/portfolio',
+        branch: 'gh-pages',
+      },
+
+    },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {
