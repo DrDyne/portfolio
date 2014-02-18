@@ -1,0 +1,30 @@
+.ng-enter,
+.ng-leave,
+.ng-animate {
+  transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+
+.ng-enter {
+  left: 100%;
+}
+
+.ng-enter.ng-enter-active {
+  left: 0;
+}
+
+.ng-leave {
+  left: 0;
+}
+
+.ng-leave.ng-leave-active {
+  left: -100%;
+}
+
+.animate-switch-container {
+  position: relative;
+  min-height: 480px;
+}
+
+.animate-switch-container .animate-switch {
+  position: absolute;
+}
