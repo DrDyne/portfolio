@@ -226,14 +226,6 @@ section {
   background-image: url('/images/business_contact-48.png');
 }
 
-[jq-slider] {
-  /*height: auto !important;*/
-}
-
-[jq-slider] li section {
-  padding-right: 10px;
-}
-
 .row-first {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -247,12 +239,6 @@ section {
 .row-first .section {
   background-color: transparent;
 }
-
-/*
-.section.page {
-  min-height: 480px;
-}
-*/
 
 h1 {
   font-family: Florence;
@@ -271,37 +257,6 @@ h1.section-header {
 section h1 {
   font-size: 3em;
 }
-
-.slider-nav {
-  position: absolute;
-  font-size: 2.5em;
-  bottom: -40px;
-  left: 0px;
-  right: 0px;
-  height: 40px;
-}
-
-.slider-nav .jq-slider-nav a {
-  color: black;
-}
-
-.slider-nav .jq-slider-nav {
-  position: absolute;
-  cursor: pointer;
-}
-
-.slider-nav .jq-slider-nav-left {
-  left: 0px;
-}
-
-.slider-nav .jq-slider-nav-right {
-  right: 0px;
-}
-
-
-
-
-
 
 .sausage-set {
   position: fixed;
@@ -416,55 +371,6 @@ a:hover, a:active {
   margin-top: 20px;
 }
 
-[passed="true"], [passed="true"] a {
-  color: #5e7d00 !important;
-}
-
-[passed="false"], [passed="false"] a {
-  color: #b03911 !important;
-}
-
-.jasmine-failed-description {
-  font-weight: bold;
-}
-
-
-.jasmine-passed-icon, .jasmine-failed-icon {
-  font-weight: bold;
-}
-
-.bg-mario-container {
-  position: relative;
-  min-height: 140px;
-}
-
-.bg-mario-text {
-  font-family: 'Nes';
-  font-size: 1.2em;
-  padding: 20px 0 40px;
-}
-
-#HTMLReporter .alert .bg-mario {
-  min-height: 140px;
-  background-image: url('/images/mario-toad.png');
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  position: absolute;
-  top: -43px;
-  left: 0;
-  right: 0;
-}
-
-.bg-mario-ground {
-  min-height: 140px;
-  background-image: url('/images/ground.png');
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 img.activity {
   margin: 0 auto;
   max-height: 99px;
@@ -478,10 +384,6 @@ img.activity {
 
 .tool .tool-horizontal {
   display: inline-block;
-}
-
-[demo-tdd] {
-  min-height: 413px;
 }
 
 /*
