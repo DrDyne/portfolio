@@ -106,7 +106,7 @@ body {
 
 body {
   padding-top: 40px;
-  background-image: url('/images/bg.png');
+  background-image: url('images/bg.png');
   background-repeat: repeat-x;
   background-color: white;
   font: Helvetica;
@@ -182,48 +182,48 @@ section {
 }
 
 .logo-me {
-  background-image: url('/images/glasses-48.png');
+  background-image: url('images/glasses-48.png');
   margin-left: 1px;
 }
 
 .logo-employments {
   /*
-  background-image: url('/images/tie-50.png');
+  background-image: url('images/tie-50.png');
   */
-  background-image: url('/images/businessman-48.png');
+  background-image: url('images/businessman-48.png');
 }
 
 .logo-demos {
-  background-image: url('/images/electronics-48.png');
+  background-image: url('images/electronics-48.png');
 }
 
 .logo-tools {
   margin-left: 1px;
-  background-image: url('/images/tool_box-48.png');
+  background-image: url('images/tool_box-48.png');
 }
 
 .logo-education {
-  background-image: url('/images/graduation_cap-48.png');
+  background-image: url('images/graduation_cap-48.png');
 }
 
 .logo-skills {
-  background-image: url('/images/mustache-48.png');
+  background-image: url('images/mustache-48.png');
 }
 
 .logo-languages {
-  background-image: url('/images/globe-48.png');
+  background-image: url('images/globe-48.png');
 }
 
 .logo-activities {
-  background-image: url('/images/conference-48.png');
+  background-image: url('images/conference-48.png');
 }
 
 .logo-contact {
-  background-image: url('/images/handshake-48.png');
+  background-image: url('images/handshake-48.png');
 }
 
 .logo-you {
-  background-image: url('/images/business_contact-48.png');
+  background-image: url('images/business_contact-48.png');
 }
 
 .row-first {
