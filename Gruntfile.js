@@ -273,8 +273,18 @@ module.exports = function (grunt) {
             'views/{,*/}*.html',
             'bower_components/**/*',
             'images/{,*/}*.{webp}',
-            'images/**.*',
             'fonts/*'
+          ]
+        }],
+      },
+      images: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'images/**.*',
           ]
         }, {
           expand: true,
@@ -384,7 +394,8 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:images',
   ]);
 
   grunt.registerTask('default', [
