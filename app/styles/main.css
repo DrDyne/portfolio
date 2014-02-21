@@ -403,3 +403,11 @@ height: 1024px;
   letter-spacing: 0.1em;
   text-shadow: 1px 1px 1px #999;
 }
+
+#remy {
+  color: black
+}
+
+#remy:hover {
+  font-size: 18px
+}
