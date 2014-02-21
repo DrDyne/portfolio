@@ -244,6 +244,8 @@ h1 {
   font-family: Florence;
 }
 
+[contact] .media-body h2 { font-family: Florence; }
+
 .fake-section-header {
   font-family: Florence;
   font-size: 1.4em;
@@ -411,3 +413,19 @@ height: 1024px;
 #remy:hover {
   font-size: 18px
 }
+
+.media[contact] { background-color: transparent; }
+.media[contact] a { color: white }
+.media[contact]:hover {
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.media[contact="linkedin"]:hover { background-color: #0097bd; }
+.media[contact="linkedin"]:hover .media-heading { color: #0097bd; }
+.media[contact="github"]:hover { background-color: black; }
+.media[contact="github"]:hover .media-heading { color: black; }
+.media[contact="geeklist"]:hover { background-color: #88c454; }
+.media[contact="geeklist"]:hover .media-heading { color: #88c454; }
