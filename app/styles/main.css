@@ -429,3 +429,9 @@ height: 1024px;
 .media[contact="github"]:hover .media-heading { color: black; }
 .media[contact="geeklist"]:hover { background-color: #88c454; }
 .media[contact="geeklist"]:hover .media-heading { color: #88c454; }
+.media[contact="stackoverflow"]:hover { background-color: #ff7a15; }
+.media[contact="stackoverflow"]:hover .media-heading { color: #ff7a15; }
+.media[contact="tumblr"]:hover { background-color: #2f4d6b; }
+.media[contact="tumblr"]:hover .media-heading { color: #2f4d6b; }
+.media[contact="twitter"]:hover { background-color: #5ea9dd; }
+.media[contact="twitter"]:hover .media-heading { color: #5ea9dd; }
