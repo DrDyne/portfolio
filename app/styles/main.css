@@ -423,8 +423,8 @@ height: 1024px;
   transition: all 0.5s linear;
 }
 
-.media[contact="linkedin"]:hover { background-color: #0097bd; }
-.media[contact="linkedin"]:hover .media-heading { color: #0097bd; }
+.media[contact="linkedin"]:hover { background-color: #007bb7; }
+.media[contact="linkedin"]:hover .media-heading { color: #007bb7; }
 .media[contact="github"]:hover { background-color: black; }
 .media[contact="github"]:hover .media-heading { color: black; }
 .media[contact="geeklist"]:hover { background-color: #88c454; }
