@@ -415,7 +415,7 @@ height: 1024px;
 }
 
 .media[contact] { background-color: transparent; }
-.media[contact] a { color: white }
+.media[contact] a { color: white; opacity: 1; }
 .media[contact]:hover {
   -moz-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
