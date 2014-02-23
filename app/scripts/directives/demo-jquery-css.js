@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('portfolioApp')
-.directive('demoJqueryCss', [function () {
+.directive('demoJqueryCss', ['Tracker', function (Tracker) {
   return {
     restrict: 'E',
     templateUrl: 'views/demo-jquery-css.html',
@@ -30,6 +30,7 @@ angular.module('portfolioApp')
         },
 
         animate: function (self) {
+          if ( self.timer === 0 ) Tracker.track({action: 'play-css-animation-hero'});
           self.$el.attr('hero', this.timer);
           if ( self.timer === self.options.steps ) return self.timer = 0;
           self.timer += 1;
@@ -55,6 +56,7 @@ angular.module('portfolioApp')
         var isChecked = $(event.currentTarget).is(':checked');
         $('.neon-container-well').animate({'background-color': (!isChecked? 'transparent' : '#222')}, function () {
           setTimeout(function () {
+            if ( !isChecked ) Tracker.track({action: 'play-css-animation-neon'});
             $('#neon')[ !isChecked ? 'removeClass' : 'addClass']('animate-lights-on');
           }, 500);
         });

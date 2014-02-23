@@ -3,5 +3,9 @@
 angular.module('portfolioApp')
 .controller('MainCtrl', [
   '$scope',
-function ($scope) {
+  'Tracker',
+function ($scope, Tracker) {
+  $scope.track = function (action) {
+    Tracker.track({action: action});
+  }
 }]);

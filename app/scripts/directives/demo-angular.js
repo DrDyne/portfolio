@@ -15,7 +15,6 @@ angular.module('portfolioApp')
       };
 
       $scope.clearColor = function (index) {
-        var colors = getDefinedColors();
         $scope.colors[index] = '';
       };
 
