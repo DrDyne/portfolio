@@ -31,14 +31,28 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
       <div class="navbar navbar-fixed-top" ng-controller="HeaderCtrl">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="remy" class="navbar-brand" ng-click="trackContact()" scroll-to="contact" href="#">Remy Chaumard</a>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+              <span class="sr-only">Toggle navigation</span>
+              Jump to... <b class="caret"></b>
+            </button>
+            <a id="remy" class="navbar-brand" ng-click="trackContact()" scroll-to="contact" href="#">Remy Chaumard</a>
+          </div>
+          <div id="main-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="me">Me</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="employments">Employments</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="demos">Demos</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="education">Education</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="skills">Skills</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="tools">Tools</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="activities">Activities</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="languages">Languages</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="contact">Contact</a></li>
+              <li class="hidden-sm hidden-md hidden-lg"><a href="#" scroll-to="you">You</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 

@@ -105,8 +105,10 @@ body {
 }
 
 body {
-  padding-top: 40px;
+  padding-top: 51px;
+  //margin-top: 51px;
   background-image: url('../images/bg.png');
+  //background-position-y: 51px;
   background-repeat: repeat-x;
   background-color: white;
   font: Helvetica;
@@ -128,6 +130,7 @@ body::-webkit-scrollbar {
   color: white;
 }
 
+.navbar-fixed-top { background-color: rgba(221,221,221,0.2); }
 .navbar.navbar-fixed-top {
   margin: 0;
 }
