@@ -48,6 +48,9 @@ body {
     max-width: 920px;
   }
 }
+
+[ng-controller="MainCtrl"] { overflow-x: hidden; }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -121,6 +124,7 @@ body::-webkit-scrollbar {
 .scroll-text {
   position: absolute;
   left: -105px;
+  top: 5px;
   text-align: right;
   width: 80px;
   color: #ddd;
