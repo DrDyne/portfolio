@@ -9,7 +9,7 @@ angular.module('portfolioApp')
           topOffset: $attrs.scrollTopOffset || 50,
           bottomOffset: $attrs.ScrollBottomOffset || 0,
           stickClass: $attrs.scrollStickClass || 'sticked-top',
-          onStick: function ($el) { Tracker.track({action: $attrs.scrollFollow}); },
+          onStick: function ($el) { Tracker.track({action: $attrs.scrollFollow, type: 'pageview'}); },
           //onUnStick: function ($el) { }
         });
       }, 1000);
