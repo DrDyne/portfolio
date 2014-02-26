@@ -96,7 +96,7 @@
                   A developper invents stuff.
                   He should push the limits of what's achievable and engineer solutions.
                   Consider it like an ever-changing Rubik's cube.
-                  He is always be up to date on his technical knowledge, and seeks to know more.
+                  He is always up to date on his technical knowledge, and seeks to know more.
                   Reading blogs, books, attending user groups and conferences really help.
                 </p>
                 <p>
@@ -159,7 +159,7 @@
                   Consistency and predictability are the keys.
                 </p>
                 <blockquote>User experience (UX) involves a person's behaviors, attitudes, and emotions about using a particular product, system or service. User experience includes the practical, experiential, affective, meaningful and valuable aspects of human-computer interaction and product ownership.
-                  <small><a href="http://en.wikipedia.org/wiki/User_experience" target="_blank">Wikipedia</a> </small>
+                  <small><a href="http://en.wikipedia.org/wiki/User_experience" target="_blank">Wikipedia</a></small>
                 </blockquote>
                 <p>
                   A few years ago, UI/X design was considered as one profession: Web design.
@@ -172,9 +172,10 @@
                 <p>
                   But probably not the kind of hacker you're thinking of.
                 </p>
-                <blockquote><p>Hackers solve problems and build things, and they believe in freedom and voluntary mutual help.</p>
+                <blockquote>Hackers solve problems and build things, and they believe in freedom and voluntary mutual help.
                 [...]
-                <p>The basic difference is this: hackers build things, crackers break them.</p>
+                <br>
+                The basic difference is this: hackers build things, crackers break them.
                   <small><a href="http://catb.org/~esr/faqs/hacker-howto.html#attitude">Eric Steven Raymond</a>, the Hacker Attitude</small>
                 </blockquote>
                 </p>
@@ -312,50 +313,51 @@
             <div class="section-logo-line"></div>
             <h1 class="section-header">Demos</h1>
             <div class="row">
-
-              <section>
-                <h1>Angular</h1>
-                <p>
-                  Here's a small example of what I'm able to do with my latest toy.
-                </p>
-                <p>
-                  You can play around safely with the colors, css rules will be generated for you.
-                  Although it's no use trying to clear all colors (as a gradient is defined by at least two colors), note how the app falls back to background-color and no styling at all.
-                </p>
-                <div demo-angular class="well" ng-click="track('angular')"></div>
-              </section>
-
-              <section>
-                <h1>Backbone</h1>
-                <div>
+              <div class="col-md-12">
+                <section>
+                  <h1>Angular</h1>
                   <p>
-                    This demonstrates how to isolate a jquery plugin behind a Backbone View coupled to a Model in order to gain finer control on the output.
+                    Here's a small example of what I'm able to do with my latest toy.
                   </p>
                   <p>
-                    History length is limited to 5 entries by default. The History collection exposes methods to the View so that all history-related logic is done internally.
+                    You can play around safely with the colors, css rules will be generated for you.
+                    Although it's no use trying to clear all colors (as a gradient is defined by at least two colors), note how the app falls back to background-color and no styling at all.
+                  </p>
+                  <div demo-angular class="well" ng-click="track('angular')"></div>
+                </section>
+
+                <section>
+                  <h1>Backbone</h1>
+                  <div>
+                    <p>
+                      This demonstrates how to isolate a jquery plugin behind a Backbone View coupled to a Model in order to gain finer control on the output.
+                    </p>
+                    <p>
+                      History length is limited to 5 entries by default. The History collection exposes methods to the View so that all history-related logic is done internally.
+                    </p>
+                    <p>
+                      Note:
+                      I used a setTimeout to render the Backbone view outside of the Angular scope for the sake of simplicity (this page is entirely controlled by Angular).
+                      Don't try this at home!
+                    </p>
+                    <p> (Firefox does not support filters in css)</p>
+                    <div demo-backbone class="well" ng-click="track('backbone')"></div>
+                  </div>
+                </section>
+
+                <section>
+                  <h1>jQuery/css</h1>
+                  <p>
+                    This is a jQuery plugin named demo.superHero, created for the occasion.
+                    If you click on the link, the plugin will execute, adding css classes in a javascript timeout loop.
                   </p>
                   <p>
-                    Note:
-                    I used a setTimeout to render the Backbone view outside of the Angular scope for the sake of simplicity (this page is entirely controlled by Angular).
-                    Don't try this at home!
+                    The second part is entirely animated using CSS3.
+                    JQuery is only used to toggle class with a timeout to kick in the CSS animation.
                   </p>
-                  <div demo-backbone class="well" ng-click="track('backbone')"></div>
-                </div>
-              </section>
-
-              <section>
-                <h1>jQuery/css</h1>
-                <p>
-                  This is a jQuery plugin named demo.superHero, created for the occasion.
-                  If you click on the link, the plugin will execute, adding css classes in a javascript timeout loop.
-                </p>
-                <p>
-                  The second part is entirely animated using CSS3.
-                  JQuery is only used to toggle class with a timeout to kick in the CSS animation.
-                </p>
-                <demo-jquery-css></demo-jquery-css>
-              </section>
-
+                  <demo-jquery-css></demo-jquery-css>
+                </section>
+              </div>
             </div>
           </div>
         </div>
@@ -375,22 +377,14 @@
                 <ul>
                   <li>
                     Image synthesis
-                    <ul>
-                      <li>Rendering techniques, image quilting and recomposition through sampling</li>
-                    </ul>
+                    <p>Rendering techniques, image quilting and recomposition through sampling</p>
                   <li>
                     Machine learning
-                    <ul>
-                      <li>Text comprehension, typing prediction</li>
-                    </ul>
+                    <p>Text comprehension, typing prediction</p>
                   </li>
                   <li>
                     Optimization
-                    <ul>
-                      <li>
-                        Pathfinding, decision making
-                      </li>
-                    </ul>
+                    <p>Pathfinding, decision making</p>
                   </li>
                 </ul>
                 <p>
@@ -404,9 +398,7 @@
                 <ul>
                   <li>
                     Génie Mathématique et Informatique (GMI)
-                    <ul>
-                      <li>Voice recognition, network security basics, graph theory, neuronal networks, relational databases</li>
-                    </ul>
+                    <p>Voice recognition, network security basics, graph theory, neuronal networks, relational databases</p>
                   </li>
                 </ul>
                 <p>
@@ -420,9 +412,7 @@
                 <ul>
                   <li>
                     Informatique et Réseaux pour les Industries et Services (IRIS)
-                    <ul>
-                      <li>Embedded systems</li>
-                    </ul>
+                    <p>Embedded systems</p>
                   </li>
                 </ul>
               </section>
@@ -440,114 +430,124 @@
             <div class="section-logo-line"></div>
             <h1 class="section-header">Skills</h1>
             <div class="row">
-              <section>
-                <h1>Team leader</h1>
-                <p>
-                  I am in charge of migrating my current project to Angular.
-                  The amount of technical debt on this project makes it a very hard challenge, but I'll tell you my secret anyway: <em>slow migration</em>.
-                </p>
-                <p>
-                  Although I have worked in a <a href="http://en.wikipedia.org/wiki/Scrum_(software_development)" target="_blank">Scrum</a> / <a href="http://agilemanifesto.org/" target="_blank">Agile</a> team for a couple of years, our team has found a compromise with the "pull" aspect of the Kanban approach.
-                  Mixing what works best for us from each methodology, we came up with our own workflow.
-                </p>
-                <p>
-                  I have been operating with <a href="www.trello.com" target="_blank">Trello</a> and <a href="www.atlassian.com/jira" target="_blank">Jira</a> for a while, but I recently came back to <a href="www.redmine.org" target="_blank">Redmine</a>.
-                </p>
-              </section>
-              <section>
-                <h1>Quick Prototyping</h1>
-                <p>
-                  Also called <a href="http://en.wikipedia.org/wiki/Rapid_application_development" target="_blank">Rapid Application Development</a>, Quick Prototyping is a technique I use for minor to medium feature design.
-                  It allows me to quickly hack the UI to instantly get a better idea of the look and feel of a feature once integrated.
-                  We can then play around live with the markup and css, and the prototype becomes the reference for future development.
-                </p>
-                <p>
-                  However, it is does not play well when starting a project from scratch, as I find it too iterative.
-                </p>
-              </section>
-              <section>
-                <h1>UI/X Design</h1>
-                <p>
-                  Because Quick Prototyping isn't enough for epic stories and monster features, and also because I'm a frustrated artist.
-                </p>
-                <ul>
-                  <li>Gimp</li>
-                  <li>Photoshop</li>
-                  <li>Illustrator</li>
-                  <li>Sketchbook pro</li>
-                </ul>
-                <ul>
-                  <li>NinjaMock</li>
-                  <li>BalsamiQ</li>
-                </ul>
-                <p>
-                  It is worth mentioning that my favorite tool still is a pen and a big stack of stickies.
-                <p>
-              </section>
-              <section>
-                <h1>X Driven Development and QA</h1>
-                <p>
-                  Where X could be one of either <b>Behavior</b>, <b>Design</b>, <b>Feature</b> or <b>Test</b>.
-                  As there is no "one for all" best practice, I recommend blending these techniques together, keeping in mind the following:
-                </p>
-                <ul>
-                  <li>
-                    BDD: how it should work
-                  </li>
-                  <li>
-                    DDD: what it should look like when it works
-                  </li>
-                  <li>
-                    FDD: what it should do
-                  </li>
-                  <li>
-                    TDD: it should work
-                  </li>
-                </ul>
-                <p>
-                  Quality Assurance plays a different role in the development process, but it is far from being negligible.
-                  End-to-end testing and Integration testing comes after development is done, and often written by a separate team.
-                  Now with <a href="http://karma-runner.github.io/0.10/index.html" target="_blank">Karma</a> and <a href="https://github.com/angular/protractor" target="_blank">Protractor</a>, these tests can be written by the same people that made the features.
-                  This requires more discipline of course, but the end result is a huge gain in development time and a simpler project stack that still works very well with Continuous Integration tools like <a href="http://jenkins-ci.org/" target="_blank">Jenkins</a> or <a href="https://travis-ci.org/" target="_blank">Travis</a>.
-                </p>
-              </section>
-              <section>
-                <h1>Optimization</h1>
-                <p>
-                  Optimization can be applied to a lot of different domains.
-                  Productivity, algorithms, UI/X, automation, load balancing, gaming, cooking, filling up the truck when moving...
-                </p>
-                <p>
-                  It is also a synonym for <a href="http://martinfowler.com/articles/workflowsOfRefactoring/" target="_blank">Refactoring</a>, which is a known workflow to keep the code base clean and up to date.
-                </p>
-                <p>
-                  Unlike my education classes where optimization was applied to complex algorithms, web development requires a different type of optimization.
-                  I learned it the hard way. Caching techniques, asset minification, local storage, web standards, sprites, css, feature detection, JSON and schemas, rest API's, session caching, database scripting, deployment, dependency management, page load vs versioning...
-                </p>
-                <p>
-                  Lately, my attention was brought to hand-held devices.
-                  These devices have a great variety of screen sizes, hardware configuration, and constraints caused by firmwares and browsers.
-                  Because of that and their nature of touch-devices, they require more effort in term of UI and UX design.
-                </p>
-                <p>
-                  On the other hand, customers require us to be compatible with <a href="http://www.modern.ie/ie6countdown" target="_blank">legacy browsers</a>, which only support a limited feature set of the most modern browsers.
-                  It quickly becomes a real headache to accomodate both sides of the coin.
-                </p>
-                <p>
-                  Welcome to the <a href="http://caniuse.com/" target="_blank">Web development</a> world!
-                </p>
-              </section>
-              <section>
-                <h1>Social</h1>
-                <p>
-                  Yes I am.
-                  I read a lot of books and articles about the matter and meet a lot of people at conferences, meetups, hackathons, gamejams...
-                </p>
-                <p>
-                  It would be a full-time job to keep up to date about everything I know, but fortunately the <a href="https://geekli.st/DrDyne" target="_blank">geekli.st</a> and <a href="http://stackoverflow.com/users/3224086/drdyne" target="_blank">Stack Exchange</a> communities (among other) make it easier for me.
-                  And I get to pick what's best tailored to my needs.
-                </p>
-              </section>
+              <div class="col-md-12">
+                <section>
+                  <h1>Team leader</h1>
+                  <p>
+                    I am in charge of migrating my current project to Angular.
+                    The amount of technical debt on this project makes it a very hard challenge, but I'll tell you my secret anyway: <em>slow migration</em>.
+                  </p>
+                  <p>
+                    Although I have worked in a <a href="http://en.wikipedia.org/wiki/Scrum_(software_development)" target="_blank">Scrum</a> / <a href="http://agilemanifesto.org/" target="_blank">Agile</a> team for a couple of years, our team has found a compromise with the "pull" aspect of the Kanban approach.
+                    Mixing what works best for us from each methodology, we came up with our own workflow.
+                  </p>
+                  <p>
+                    I have been operating with <a href="www.trello.com" target="_blank">Trello</a> and <a href="www.atlassian.com/jira" target="_blank">Jira</a> for a while, but I recently came back to <a href="www.redmine.org" target="_blank">Redmine</a>.
+                  </p>
+                </section>
+                <section>
+                  <h1>Quick Prototyping</h1>
+                  <p>
+                    Also called <a href="http://en.wikipedia.org/wiki/Rapid_application_development" target="_blank">Rapid Application Development</a>, Quick Prototyping is a technique I use for minor to medium feature design.
+                    It allows me to quickly hack the UI to instantly get a better idea of the look and feel of a feature once integrated.
+                    We can then play around live with the markup and css, and the prototype becomes the reference for future development.
+                  </p>
+                  <p>
+                    However, it is does not play well when starting a project from scratch, as I find it too iterative.
+                  </p>
+                </section>
+                <section>
+                  <h1>UI/X Design</h1>
+                  <p>
+                    Because Quick Prototyping isn't enough for epic stories and monster features, and also because I'm a frustrated artist.
+                  </p>
+                  <ul>
+                    <li>Gimp</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Sketchbook pro</li>
+                  </ul>
+                  <ul>
+                    <li>NinjaMock</li>
+                    <li>BalsamiQ</li>
+                  </ul>
+                  <p>
+                    It is worth mentioning that my favorite tool still is a pen and a big stack of stickies.
+                  <p>
+                </section>
+                <section>
+                  <h1>X Driven Development and QA</h1>
+                  <p>
+                    Where X could be one of either <b>Behavior</b>, <b>Design</b>, <b>Feature</b> or <b>Test</b>.
+                    As there is no "one for all" best practice, I recommend blending these techniques together, keeping in mind the following:
+                  </p>
+                  <ul>
+                    <li>
+                      BDD: how it should work
+                    </li>
+                    <li>
+                      DDD: what it should look like when it works
+                    </li>
+                    <li>
+                      FDD: what it should do
+                    </li>
+                    <li>
+                      TDD: it should work
+                    </li>
+                  </ul>
+                  <p>
+                    Quality Assurance plays a different role in the development process, but it is far from being negligible.
+                    End-to-end testing and Integration testing comes after development is done, and often written by a separate team.
+                    Now with <a href="http://karma-runner.github.io/0.10/index.html" target="_blank">Karma</a> and <a href="https://github.com/angular/protractor" target="_blank">Protractor</a>, these tests can be written by the same people that made the features.
+                    This requires more discipline of course, but the end result is a huge gain in development time and a simpler project stack that still works very well with Continuous Integration tools like <a href="http://jenkins-ci.org/" target="_blank">Jenkins</a> or <a href="https://travis-ci.org/" target="_blank">Travis</a>.
+                  </p>
+                </section>
+                <section>
+                  <h1>Optimization</h1>
+                  <p>
+                    Optimization can be applied to a lot of different domains.
+                    Productivity, algorithms, UI/X, automation, load balancing, gaming, cooking, filling up the truck when moving...
+                  </p>
+                  <p>
+                    It is also a synonym for <a href="http://martinfowler.com/articles/workflowsOfRefactoring/" target="_blank">Refactoring</a>, which is a known workflow to keep the code base clean and up to date.
+                  </p>
+                  <p>
+                    Unlike my education classes where optimization was applied to complex algorithms, web development requires a different type of optimization.
+                    I learned it the hard way. Caching techniques, asset minification, local storage, web standards, sprites, css, feature detection, SEO, analytics, JSON and schemas, rest API's, session caching, database scripting, deployment, dependency management, page load vs versioning...
+                  </p>
+                  <p>
+                    Welcome to the <a href="http://caniuse.com/" target="_blank">Web development</a> world!
+                  </p>
+                </section>
+                <section>
+                  <h1>Mobile first</h1>
+                  <p>
+                    Lately, my attention was brought to hand-held devices.
+                  </p>
+                  <p>
+                    These devices have a great variety of screen sizes, hardware configuration, and constraints caused by firmwares and browsers.
+                    Because of that and their nature of touch-devices, they require more effort in term of UI and UX design.
+                  </p>
+                  <p>
+                    On the other hand, customers require us to be compatible with <a href="http://www.modern.ie/ie6countdown" target="_blank">legacy browsers</a>, which only support a limited feature set of the most modern browsers.
+                    It quickly becomes a real headache to accomodate both sides of the coin.
+                  </p>
+                  <p>
+                    To solve these problems, I use mobile-first frameworks like the famous <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, or <a href="http://ink.sapo.pt/" target="_blank">Ink</a>.
+                  </p>
+                </section>
+                <section>
+                  <h1>Social</h1>
+                  <p>
+                    Yes I am.
+                    I read a lot of books and articles about the matter and meet a lot of people at conferences, meetups, hackathons, gamejams...
+                  </p>
+                  <p>
+                    It would be a full-time job to keep up to date about everything I know, but fortunately the <a href="https://geekli.st/DrDyne" target="_blank">geekli.st</a> and <a href="http://stackoverflow.com/users/3224086/drdyne" target="_blank">Stack Exchange</a> communities (among other) make it easier for me.
+                    And I get to pick what's best tailored to my needs.
+                  </p>
+                </section>
+              </div>
             </div>
           </div>
         </div>
