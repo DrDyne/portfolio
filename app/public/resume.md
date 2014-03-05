@@ -1,140 +1,121 @@
-<h2>Remy Chaumard</h2>
+## Remy Chaumard
+<r.chaumard@gmail.com> | 438-885-1722 | 1139 st joseph est, H2J1L3, Montreal QC
 
-<p><a href="&#x6D;&#x61;&#105;&#108;&#x74;&#x6F;:&#x72;&#x2E;&#99;&#104;&#97;&#117;ma&#x72;&#100;&#x40;&#x67;&#x6D;&#x61;&#x69;&#108;&#x2E;&#x63;&#x6F;&#109;">&#x72;&#x2E;&#99;&#104;&#97;&#117;ma&#x72;&#100;&#x40;&#x67;&#x6D;&#x61;&#x69;&#108;&#x2E;&#x63;&#x6F;&#109;</a> | 438-885-1722 | 1139 st joseph est, H2J1L3, Montreal QC</p>
+---
 
-<hr />
+> **Interactive portfolio:** <http://drdyne.github.io/portfolio/>  
+**Linked in:** <http://www.linkedin.com/pub/remy-chaumard/22/267/259>  
+**Languages**: English, French
 
-<blockquote>
-  <p><strong>Interactive portfolio:</strong> <a href="http://drdyne.github.io/portfolio/">http://drdyne.github.io/portfolio/</a> <br />
-  <strong>Linked in:</strong> <a href="http://www.linkedin.com/pub/remy-chaumard/22/267/259">http://www.linkedin.com/pub/remy-chaumard/22/267/259</a> <br />
-  <strong>Languages</strong>: English, French</p>
-</blockquote>
 
-<h1>Professional Profile:</h1>
+Professional Profile:
+===
 
-<blockquote>
-  <p>5 years of web development (frontend) <br />
-    UI and UX designer <br />
-    Web application architect <br />
-    Technical team lead <br />
-    Continuous integration <br />
-    Experience with Kanban, Agile software development (Scrum) <br />
-    Familiar with Backend technologies (NodeJS, Java, Php) <br />
-    Creative, open minded, initiative, team spirit  </p>
-</blockquote>
+> 5 years of web development (frontend)  
+  UI and UX designer  
+  Web application architect  
+  Technical team lead  
+  Continuous integration  
+  Experience with Kanban, Agile software development (Scrum)  
+  Familiar with Backend technologies (NodeJS, Java, Php)  
+  Creative, open minded, initiative, team spirit  
 
-<h1>Technical skills:</h1>
 
-<blockquote>
-  <p><strong>Web</strong> <br />
-  Angular, Backbone, RequireJS, jQuery, NodeJS, REST APIs, i18n, HTML5/CSS3 etc. <br />
-  Especially efficient with cross platform RIA (client-side web apps), including mobile and tablet. <br />
-  Analytics, Search Engine Optimization, Application architecture, Responsive design, 3rd party integration and connectors.</p>
-  
-  <p><strong>Process and testing automation</strong> <br />
-  Github, Yeoman (Grunt, Bower, Yo), Rake, Jenkins, Travis. <br />
-  BDD, TDD, in continuous environment, in-browser and detached (console) <br />
-  Trello, Jira, Redmine.</p>
-  
-  <p><strong>Design, prototyping</strong> <br />
-  Photoshop, Illustrator, Gimp, Sketchbook pro, NinjaMock, BalsamiQ</p>
-  
-  <p><strong>Tools</strong> <br />
-  Vim on Linux, macVim on Mac, gVim on Windows.</p>
-</blockquote>
 
-<h1>Work Experience:</h1>
+Technical skills:
+===
 
-<h2>Silanis - 2011 … today</h2>
+> **Web**  
+Angular, Backbone, RequireJS, jQuery, NodeJS, REST APIs, i18n, HTML5/CSS3 etc.  
+Especially efficient with cross platform RIA (client-side web apps), including mobile and tablet.  
+Analytics, Search Engine Optimization, Application architecture, Responsive design, 3rd party integration and connectors.
 
-<h3>Frontend technical lead, UI/UX designer</h3>
+> **Process and testing automation**  
+Github, Yeoman (Grunt, Bower, Yo), Rake, Jenkins, Travis.  
+BDD, TDD, in continuous environment, in-browser and detached (console)  
+Trello, Jira, Redmine.
 
-<blockquote>
-  <p>Design UI, UX, and web Application architecture and components in a      Continuous Integration environment. <br />
-  Lead the front end team and provide accurate plannings, consolidate the development effort over several of the company's products and services. <br />
-  Learn, try, use or discard new technologies. <br />
-  Write unit and end-to-end tests, automate release procedures. <br />
-  Lead the migration effort from a Sinatra environment to a full client-side Angular web app. <br />
-  Create mocks and prototypes for feature validation, optimize API and website performance.</p>
-</blockquote>
+> **Design, prototyping**  
+Photoshop, Illustrator, Gimp, Sketchbook pro, NinjaMock, BalsamiQ
 
-<h2>Babel Media - 2011</h2>
+> **Tools**  
+Vim on Linux, macVim on Mac, gVim on Windows.
 
-<h3>French QA localisation tester</h3>
+		
 
-<blockquote>
-  <p>Play through games and report issues. <br />
-  QA English &lt;--> French text and audio translations. <br />
-  Follow rigorously customer compliance sheets. <br />
-  Tested games on various platforms (solo and multiplayer):</p>
-  
-  <ul>
-  <li>Steam</li>
-  <li>Xbox 360 + Kinect</li>
-  <li>PS3</li>
-  <li>iPad</li>
-  </ul>
-</blockquote>
+Work Experience:
+===
 
-<h2>LG - 2010</h2>
+##Silanis - 2011 … today
+### Frontend technical lead, UI/UX designer
 
-<h3>Tools developper</h3>
+>Design UI, UX, and web Application architecture and components in a      Continuous Integration environment.  
+Lead the front end team and provide accurate plannings, consolidate the development effort over several of the company's products and services.  
+Learn, try, use or discard new technologies.  
+Write unit and end-to-end tests, automate release procedures.  
+Lead the migration effort from a Sinatra environment to a full client-side Angular web app.  
+Create mocks and prototypes for feature validation, optimize API and website performance.
 
-<blockquote>
-  <p>Build an asset management and distribution internal tool, which keeps track of who is borrowing which prototype phone within the R&amp;D team.</p>
-  
-  <p>The tool also stores phones' specific hardware / software configuration and functionalities.</p>
-  
-  <p>Phones are versionned too, mostly because prototypes at different stages of the production chain greatly vary in their specs.</p>
-</blockquote>
+##Babel Media - 2011
+###French QA localisation tester
 
-<h2>Eurocopter - 2008</h2>
+>Play through games and report issues.  
+>QA English <--> French text and audio translations.  
+>Follow rigorously customer compliance sheets.  
+>Tested games on various platforms (solo and multiplayer):
 
-<h3>Tools developper</h3>
+> - Steam
+> - Xbox 360 + Kinect
+> - PS3
+> - iPad
 
-<blockquote>
-  <p>Build a software to help with reception of helicopter parts and stock management.</p>
-  
-  <p>It is also used to help preparing and distributing various tools to the teams of mechanics on a daily basis.</p>
-  
-  <p>Given the mechanical parts to assemble for a given day, a list of tools to put together is generated. This had to be prepared and brought to various workshops across the site every morning, before the mechanics started working.</p>
-  
-  <p>Each item is scanned when handed back, and additional information about its condition is manually added to the system. The system also generates warnings when running low on specific pieces such as bolts, nuts, screws, etc.</p>
-</blockquote>
+##LG - 2010
+###Tools developper
 
-<h1>Activities:</h1>
+>Build an asset management and distribution internal tool, which keeps track of who is borrowing which prototype phone within the R&D team.
 
-<blockquote>
-  <p>Js-montreal - Javascript user group - 2012 … today <br />
-    Confoo - conference for web developpers - 2012, 2013, 2014 <br />
-    Beyond Tiles - Microsoft UX workshop - 2013 <br />
-    Gamerella - Game jam - 2013 <br />
-    Coach training - 2013  </p>
-</blockquote>
+>The tool also stores phones' specific hardware / software configuration and functionalities.
 
-<h1>Education:</h1>
+>Phones are versionned too, mostly because prototypes at different stages of the production chain greatly vary in their specs.
 
-<h2><strong>Master</strong> (Montreal, Quebec)</h2>
 
-<blockquote>
-  <p><strong>Image synthesis</strong> <br />
-    Rendering techniques, image quilting and recomposition through sampling <br />
-    <strong>Machine learning</strong> <br />
-    Text comprehension, typing prediction <br />
-    <strong>Optimization</strong> <br />
-    Pathfinding, decision making</p>
-</blockquote>
+##Eurocopter - 2008
+###Tools developper
 
-<h2><strong>License</strong> (Avignon, France)</h2>
+>Build a software to help with reception of helicopter parts and stock management.
 
-<blockquote>
-  <p>Génie Mathématique et Informatique (GMI) <br />
-    Voice recognition, network security basics, graph theory, neuronal networks, relational databases</p>
-</blockquote>
+>It is also used to help preparing and distributing various tools to the teams of mechanics on a daily basis.
 
-<h2><strong>BTS</strong> (Martigues, France)</h2>
+>Given the mechanical parts to assemble for a given day, a list of tools to put together is generated. This had to be prepared and brought to various workshops across the site every morning, before the mechanics started working.
 
-<blockquote>
-  <p>Informatique et Réseaux pour les Industries et Services (IRIS) <br />
-    Embedded systems</p>
-</blockquote>
+>Each item is scanned when handed back, and additional information about its condition is manually added to the system. The system also generates warnings when running low on specific pieces such as bolts, nuts, screws, etc.
+
+Activities:
+===
+
+> Js-montreal - Javascript user group - 2012 … today  
+  Confoo - conference for web developpers - 2012, 2013, 2014  
+  Beyond Tiles - Microsoft UX workshop - 2013  
+  Gamerella - Game jam - 2013  
+  Coach training - 2013  
+
+
+
+Education:
+===
+
+## **Master** (Montreal, Quebec)  
+> **Image synthesis**   
+  Rendering techniques, image quilting and recomposition through sampling  
+  **Machine learning**  
+  Text comprehension, typing prediction  
+  **Optimization**  
+  Pathfinding, decision making
+
+## **License** (Avignon, France)  
+>  Genie Mathematique et Informatique (GMI)  
+  Voice recognition, network security basics, graph theory, neuronal networks, relational databases
+
+## **BTS** (Martigues, France)  
+>  Informatique et Reseaux pour les Industries et Services (IRIS)  
+  Embedded systems
