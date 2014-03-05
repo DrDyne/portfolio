@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         dir: 'dist',
         commit: true,
         push: true,
-        message: 'Built %sourceName% v%version% from commit %sourceCommit% on branch %sourceBranch%',
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%',
       },
       pages: {
         options: {
@@ -273,7 +273,8 @@ module.exports = function (grunt) {
             'views/{,*/}*.html',
             'bower_components/**/*',
             'images/{,*/}*.{webp}',
-            'fonts/*'
+            'fonts/*',
+            'public/*'
           ]
         }],
       },
